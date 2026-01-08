@@ -87,7 +87,7 @@ header {
     }
 
     .get-started {
-      
+
       background-color: #0a0a23;
       color: #fff;
       padding: 8px 16px;
@@ -95,6 +95,27 @@ header {
       text-decoration: none;
       font-weight: 500;
       margin-left: 3px;
+    }
+
+    /* Hamburger Menu */
+    .nav-toggle {
+      display: none;
+    }
+
+    .nav-toggle-label {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      padding: 8px;
+      margin-left: auto;
+    }
+
+    .nav-toggle-label span {
+      width: 25px;
+      height: 3px;
+      background-color: #555;
+      margin: 3px 0;
+      transition: 0.3s;
     }
     .sign-in:hover {
       background-color: #ceced3;
@@ -336,6 +357,7 @@ header {
     .section {
       padding: 4rem 0;
       background: #f8f8f8;
+      scroll-margin-top: 100px;
     }
 
     .section-header {
@@ -886,17 +908,29 @@ font-size: 5rem;
     width: 28px;
     height: 28px;
   }
-nav {
+
+  .nav-toggle-label {
+    display: flex;
+    order: 2;
+  }
+
+  nav {
     order: 3;
     width: 100%;
-    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
     margin-top: 12px;
-gap: 16px;
+    display: none;
+  }
+
+  .nav-toggle:checked ~ nav {
+    display: flex;
   }
 
   .actions {
-    order: 2;
+    order: 4;
     gap: 8px;
+    margin-top: 12px;
   }
 
   .sign-in {
@@ -1288,9 +1322,7 @@ body {
   font-weight: bold;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
-}
-
-.pricing-card h3 {
+}pricing-card h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: #000; /* Black text */
