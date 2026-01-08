@@ -157,163 +157,62 @@
     </section>
 
   <!-- Features -->
-  <section class="features" id="features">
-   <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Everything you need for design systems</h2>
-        <p class="section-subtitle">
-          From design tokens to component libraries, our platform provides all the tools you need to build and maintain scalable design systems.
-        </p>
+  <section class="features-section">
+    <h2>Everything you need for design systems</h2>
+    <p>
+      From design tokens to component libraries, our platform provides all the tools
+      you need to build and maintain scalable design systems.
+    </p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon">🎨</div>
+        <h3>Design Tokens</h3>
+        <p>Centralized design tokens for colors, typography, spacing, and more. Keep your brand consistent across all platforms.</p>
+        <span class="label core">Core</span>
       </div>
-
-      <div class="features-grid">
-
-        <!-- Card 1: Design Tokens -->
-        <div class="feature-card">
-          <div class="feature-header">
-            <div class="feature-icon">
-              <svg class="icon-palette" viewBox="0 0 24 24">
-                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
-                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
-                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
-                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
-                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
-              </svg>
-            </div>
-            <span class="feature-badge badge-core">Core</span>
-          </div>
-          <h3 class="feature-title">Design Tokens</h3>
-          <p class="feature-description">
-            Centralized design tokens for colors, typography, spacing, and more. Keep your brand consistent across all platforms.
-          </p>
-        </div>
-
-        <!-- Card 2: Component Library -->
-        <div class="feature-card">
-          <div class="feature-header">
-            <div class="feature-icon">
-              <svg class="icon-code" viewBox="0 0 24 24">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
-            </div>
-            <span class="feature-badge badge-core">Core</span>
-          </div>
-          <h3 class="feature-title">Component Library</h3>
-          <p class="feature-description">
-            Pre-built, customizable components with comprehensive documentation and code examples.
-          </p>
-        </div>
-
-        <!-- Card 3: Team Collaboration -->
-        <div class="feature-card">
-          <div class="feature-header">
-            <div class="feature-icon">
-              <svg class="icon-users" viewBox="0 0 24 24">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-            </div>
-            <span class="feature-badge badge-pro">Pro</span>
-          </div>
-          <h3 class="feature-title">Team Collaboration</h3>
-          <p class="feature-description">
-            Real-time collaboration tools for designers and developers. Comment, review, and iterate together.
-          </p>
-        </div>
-
-        <!-- Card 4: Auto-Generation -->
-        <div class="feature-card">
-          <div class="feature-header">
-            <div class="feature-icon">
-              <svg class="icon-zap" viewBox="0 0 24 24">
-                <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
-              </svg>
-            </div>
-            <span class="feature-badge badge-ai">AI</span>
-          </div>
-          <h3 class="feature-title">Auto-Generation</h3>
-          <p class="feature-description">
-            AI-powered component and token generation from your existing designs. Save hours of manual work.
-          </p>
-        </div>
-
-        <!-- Card 5: Version Control -->
-        <div class="feature-card">
-          <div class="feature-header">
-            <div class="feature-icon">
-              <svg class="icon-git-branch" viewBox="0 0 24 24">
-                <line x1="6" x2="6" y1="3" y2="15"></line>
-                <circle cx="18" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <path d="M18 9a9 9 0 0 1-9 9"></path>
-              </svg>
-            </div>
-            <span class="feature-badge badge-pro">Pro</span>
-          </div>
-          <h3 class="feature-title">Version Control</h3>
-          <p class="feature-description">
-            Track changes, manage releases, and maintain multiple versions of your design system.
-          </p>
-        </div>
-
-        <!-- Card 6: Enterprise Security -->
-        <div class="feature-card">
-          <div class="feature-header">
-            <div class="feature-icon">
-              <svg class="icon-shield" viewBox="0 0 24 24">
-                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-              </svg>
-            </div>
-            <span class="feature-badge badge-enterprise">Enterprise</span>
-          </div>
-          <h3 class="feature-title">Enterprise Security</h3>
-          <p class="feature-description">
-            SOC 2 compliant with enterprise-grade security features and single sign-on support.
-          </p>
-        </div>
-
-        <!-- Card 7: Multi-Platform -->
-        <div class="feature-card">
-          <div class="feature-header">
-            <div class="feature-icon">
-              <svg class="icon-smartphone" viewBox="0 0 24 24">
-                <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
-                <path d="M12 18h.01"></path>
-              </svg>
-            </div>
-            <span class="feature-badge badge-core">Core</span>
-          </div>
-          <h3 class="feature-title">Multi-Platform</h3>
-          <p class="feature-description">
-            Export tokens and components for web, mobile, and native platforms. One source of truth.
-          </p>
-        </div>
-
-        <!-- Card 8: Analytics & Insights -->
-        <div class="feature-card">
-          <div class="feature-header">
-            <div class="feature-icon">
-              <svg class="icon-chart-column" viewBox="0 0 24 24">
-                <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
-                <path d="M18 17V9"></path>
-                <path d="M13 17V5"></path>
-                <path d="M8 17v-3"></path>
-              </svg>
-            </div>
-            <span class="feature-badge badge-pro">Pro</span>
-          </div>
-          <h3 class="feature-title">Analytics & Insights</h3>
-          <p class="feature-description">
-            Track component usage, adoption metrics, and design system health across your organization.
-          </p>
-        </div>
-
+      <div class="feature-card">
+        <div class="icon">💻</div>
+        <h3>Component Library</h3>
+        <p>Pre-built, customizable components with comprehensive documentation and code examples.</p>
+        <span class="label core">Core</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon">👥</div>
+        <h3>Team Collaboration</h3>
+        <p>Real-time collaboration tools for designers and developers. Comment, review, and iterate together.</p>
+        <span class="label pro">Pro</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon">⚡</div>
+        <h3>Auto-Generation</h3>
+        <p>AI-powered component and token generation from your existing designs. Save hours of manual work.</p>
+        <span class="label ai">AI</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔄</div>
+        <h3>Version Control</h3>
+        <p>Track changes, manage releases, and maintain multiple versions of your design system.</p>
+        <span class="label pro">Pro</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔒</div>
+        <h3>Enterprise Security</h3>
+        <p>SOC 2 compliant with enterprise-grade security features and single sign-on support.</p>
+        <span class="label enterprise">Enterprise</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📱</div>
+        <h3>Multi-Platform</h3>
+        <p>Export tokens and components for web, mobile, and native platforms. One source of truth.</p>
+        <span class="label core">Core</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📊</div>
+        <h3>Analytics & Insights</h3>
+        <p>Track component usage, adoption metrics, and design system health across your organization.</p>
+        <span class="label pro">Pro</span>
       </div>
     </div>
-
   </section>
 
 
@@ -417,63 +316,55 @@
 
    <section class="pricing-section" id="pricing">
      <div class="pricing-header">
-      <h1>Simple, transparent pricing</h1>
+      <h2>Simple, transparent pricing</h2>
       <p>Choose the plan that fits your team size and needs. Start free and scale as you grow.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Starter</h3>
+          <p class="price">Free</p>
+          <p>Perfect for small teams and personal projects</p>
+          <ul>
+            <li>✔ Up to 3 team members</li>
+            <li>✔ Basic design tokens</li>
+            <li>✔ Component library</li>
+            <li>✔ Community support</li>
+            <li>✔ Basic documentation</li>
+          </ul>
+          <button>Get Started</button>
+        </div>
+        <div class="pricing-card popular">
+          <span class="badge">Most Popular</span>
+          <h3>Pro</h3>
+          <p class="price">$29<span>/month</span></p>
+          <p>Best for growing teams and organizations</p>
+          <ul>
+            <li>✔ Up to 25 team members</li>
+            <li>✔ Advanced design tokens</li>
+            <li>✔ Full component library</li>
+            <li>✔ Team collaboration tools</li>
+            <li>✔ Version control</li>
+            <li>✔ Priority support</li>
+            <li>✔ Usage analytics</li>
+          </ul>
+          <button>Start Free Trial</button>
+        </div>
+        <div class="pricing-card">
+          <h3>Enterprise</h3>
+          <p class="price">Custom</p>
+          <p>For large organizations with advanced needs</p>
+          <ul>
+            <li>✔ Unlimited team members</li>
+            <li>✔ Enterprise security</li>
+            <li>✔ Custom integrations</li>
+            <li>✔ Dedicated support</li>
+            <li>✔ SLA guarantee</li>
+            <li>✔ Custom training</li>
+            <li>✔ White-label options</li>
+          </ul>
+          <button>Contact Sales</button>
+        </div>
+      </div>
     </div>
-
-    <div class="pricing-cards">
-
-    <!-- Starter Plan -->
-    <div class="card">
-      <h3 class="card-title">Starter</h3>
-      <div class="price">Free</div>
-      <p class="description">Perfect for small teams and personal projects</p>
-      <ul class="features">
-        <li>Up to 3 team members</li>
-        <li>Basic design tokens</li>
-        <li>Component library</li>
-        <li>Community support</li>
-        <li>Basic documentation</li>
-      </ul>
-      <button class="btn btn-outline">Get Started</button>
-    </div>
-
-    <!-- Pro Plan -->
-    <div class="card">
-      <div class="most-popular">Most Popular</div>
-      <h3 class="card-title">Pro</h3>
-      <div class="price">$29<span>/month</span></div>
-      <p class="description">Best for growing teams and organizations</p>
-      <ul class="features">
-        <li>Up to 25 team members</li>
-        <li>Advanced design tokens</li>
-        <li>Full component library</li>
-        <li>Team collaboration tools</li>
-        <li>Version control</li>
-        <li>Priority support</li>
-        <li>Usage analytics</li>
-      </ul>
-      <button class="btn btn-primary">Start Free Trial</button>
-    </div>
-
-    <!-- Enterprise Plan -->
-    <div class="card">
-      <h3 class="card-title">Enterprise</h3>
-      <div class="price">Custom</div>
-      <p class="description">For large organizations with advanced needs</p>
-      <ul class="features">
-        <li>Unlimited team members</li>
-        <li>Enterprise security</li>
-        <li>Custom integrations</li>
-        <li>Dedicated support</li>
-        <li>SLA guarantee</li>
-        <li>Custom training</li>
-        <li>White-label options</li>
-      </ul>
-      <button class="btn btn-outline">Contact Sales</button>
-    </div>
-
-  </div>
 
 
 

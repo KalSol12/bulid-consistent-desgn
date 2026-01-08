@@ -825,7 +825,6 @@ header {
     .legal-links a:hover {
       color: var(--primary);
     }
-
 /* Responsive Styles */
 
 /* Mobile First - Base styles are mobile */
@@ -856,7 +855,7 @@ header {
 /* Desktop */
 @media (min-width: 1024px) {
   .hero h1 {
-    font-size: 5rem;
+font-size: 5rem;
   }
 
   .hero p {
@@ -887,13 +886,12 @@ header {
     width: 28px;
     height: 28px;
   }
-
-  nav {
+nav {
     order: 3;
     width: 100%;
     justify-content: center;
     margin-top: 12px;
-    gap: 16px;
+gap: 16px;
   }
 
   .actions {
@@ -923,7 +921,7 @@ header {
   }
 
   .hero p {
-    font-size: 1rem;
+font-size: 1rem;
     margin-bottom: 1.5rem;
   }
 
@@ -946,7 +944,7 @@ header {
   .card-1, .card-2, .card-3, .card-4 {
     width: 120px;
     height: 100px;
-  }
+}
 
   .center-logo {
     width: 80px;
@@ -1163,3 +1161,199 @@ header {
   border-radius: 999px;
 }
 
+/* General Page Styling */
+body {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Features Section Styling */
+.features-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #000; /* Black text */
+}
+
+.features-section p {
+  font-size: 1rem;
+  color: #333; /* Dark gray text */
+  margin-bottom: 2rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: #fff; /* White background */
+  border: 1px solid #000; /* Black border */
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light gray shadow */
+  text-align: left;
+  position: relative;
+}
+
+.feature-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000; /* Black icon */
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #000; /* Black text */
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: #333; /* Dark gray text */
+}
+
+.feature-card .label {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+/* Pricing Section Styling */
+.pricing-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+}
+
+.pricing-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #000; /* Black text */
+}
+
+.pricing-section p {
+  font-size: 1rem;
+  color: #333; /* Dark gray text */
+  margin-bottom: 2rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.pricing-card {
+  background: #fff; /* White background */
+  border: 1px solid #000; /* Black border */
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light gray shadow */
+  text-align: left;
+  position: relative;
+}
+
+.pricing-card.popular {
+  border: 2px solid #000; /* Black border for popular card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+}
+
+.pricing-card .badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #000; /* Black text */
+}
+
+.pricing-card .price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #000; /* Black text */
+}
+
+.pricing-card .price span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #333; /* Dark gray text */
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.pricing-card ul li {
+  font-size: 0.9rem;
+  color: #333; /* Dark gray text */
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff; /* White text */
+  background-color: #000; /* Black background */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pricing-card button:hover {
+  background-color: #333; /* Dark gray background */
+}
+
+.label.core {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.label.pro {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.label.ai {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.label.enterprise {
+  background-color: #6c757d;
+  color: #fff;
+}
